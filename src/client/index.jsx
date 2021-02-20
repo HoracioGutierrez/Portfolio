@@ -1,10 +1,9 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
+import {render} from 'react-dom'
 import App from "./ui/layout/App"
 import "./style.less"
 
-
-ReactDOM.render(
+render(
     <App/>,
     document.getElementById("root")
 )
