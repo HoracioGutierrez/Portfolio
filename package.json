@@ -1,0 +1,22 @@
+{
+  "name": "test-fullstack-setup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch-front": "parcel watch src/client/index.html --out-dir dist/public --no-source-maps",
+    "watch-back": "parcel watch src/server/index.js --target node --no-source-maps",
+    "watch-serve": "nodemon dist/index.js --ignore public",
+    "serve": "concurrently \"npm:watch-front\" \"npm:watch-back\" \"npm:watch-serve\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "connect-livereload": "^0.6.1",
+    "express": "^4.17.1",
+    "livereload": "^0.9.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+}
