@@ -13,7 +13,10 @@ This repository can be used to start up new project using Node , React and LESS.
 
 ## USAGE
 
-> git clone https://github.com/HoracioGutierrez/basic-setup-boilerplate
-> cd basic-setup-boilerplate
-> npm i
-> npm run serve
+> git clone https://github.com/HoracioGutierrez/basic-setup-boilerplate    
+
+> cd basic-setup-boilerplate    
+
+> npm i    
+
+> npm run serve    
