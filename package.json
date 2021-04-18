@@ -8,8 +8,8 @@
     "watch-back": "parcel watch src/server/index.js --target node --no-source-maps",
     "watch-serve": "nodemon dist/index.js --ignore public",
     "serve": "concurrently \"npm:watch-front\" \"npm:watch-back\" \"npm:watch-serve\"",
-    "build-front": "parcel build src/client/index.html --out-dir dist/public --no-source-maps",
-    "build-back": "parcel build src/server/index.js --target node --no-source-maps",
+    "build-front": "npx parcel build src/client/index.html --out-dir dist/public --no-source-maps",
+    "build-back": "npx parcel build src/server/index.js --target node --no-source-maps",
     "build": "concurrently \"npm:build-front\" \"npm:build-back\""
   },
   "keywords": [],
