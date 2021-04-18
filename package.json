@@ -8,14 +8,15 @@
     "watch-back": "parcel watch src/server/index.js --target node --no-source-maps",
     "watch-serve": "nodemon dist/index.js --ignore public",
     "serve": "concurrently \"npm:watch-front\" \"npm:watch-back\" \"npm:watch-serve\"",
-    "build-front" : "parcel build src/client/index.html --out-dir dist/public --no-source-maps",
-    "build-back" : "parcel build src/server/index.js --target node --no-source-maps",
+    "build-front": "parcel build src/client/index.html --out-dir dist/public --no-source-maps",
+    "build-back": "parcel build src/server/index.js --target node --no-source-maps",
     "build": "concurrently \"npm:build-front\" \"npm:build-back\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "concurrently": "^6.0.2",
     "connect-livereload": "^0.6.1",
     "express": "^4.17.1",
     "livereload": "^0.9.1",
